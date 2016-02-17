@@ -8,17 +8,16 @@ module.exports = new View ->
     @head =>
       @link rel: 'stylesheet', href: '/index.css'
       @meta name: "viewport", content: "width=device-width, initial-scale=1.0"
+      @script src: '/hotjar.js'
 
 
     @body =>
       @landing    id: 'landing'
-      @freelance  id: 'freelance'
+      @hire  id: 'hire'
       @footer => @markdown """
-        Copyright Tadeusz Lazurski & Dorota Cieslinska 2015
+        Copyright Dorota Cieslinska 2016
 
-        This website is open-source. You can [fork it on GitHub](https://github.com/lzrski/personal-website).
       """
 
       @script async: yes, src: '/bundle.js'
       @script async: yes, src: '/google-analytics.js'
-      @script async: yes, src: "/typeform.js"

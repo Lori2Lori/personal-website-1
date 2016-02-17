@@ -1,8 +1,10 @@
 #landing
   display: flex
   background          black
-  background-image    url('background.jpg')
+  background-image    url('macbook-bg.jpg')
   background-position top center
+  background-repeat   no-repeat
+  background-size     cover
   color               white
 
   .container
@@ -22,6 +24,18 @@
       h1
         text-align        center
 
+        a
+          font-size         10rem
+          font-weight       regular
+          color             white
+          background        red
+          border-radius     3px
+          border            none
+          width             100%
+          padding           5rem
+          text-transform    uppercase
+          text-decoration   none
+
       @media tablet
         flex-flow     row-reverse nowrap
         padding-top   16rem
@@ -32,6 +46,7 @@
 
       .main-image
         margin          4rem
+        border-radius   50%
 
         height          50rem
         flex            0 0 auto

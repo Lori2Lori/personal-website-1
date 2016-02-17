@@ -1,36 +1,29 @@
 View     = require 'teacup-view'
-typeform = require './typeform'
 
 module.exports = new View (attributes) ->
   @section attributes, => @div class: "container", =>
     @header =>
       @h1 =>
-        @raw "<strong>Hello</strong>, my name is Tadeusz."
+        @raw "Welcome to my Studio!"
         do @br
-        @raw "I'm a <strong>full stack web developer</strong>."
+        @markdown """
+          **Multiple language** and **mobile-friendly** websites.
+        """
+        @a "Get your new website!", href: "#hire"
 
       @img
         class : 'main-image'
-        src   : '/tadeusz-lazurski-circle-transparent.png'
-        alt   : 'Tadeusz Łazurski face - less than a half of it'
+        src   : '/DCieslinska.jpg'
+        alt   : 'Dorota Cieslinska face'
 
-    @tag 'main', =>
-
-      @markdown """
-        Together with my partner (a frontend developer) we enjoy solving problems using **Node.js**, **React.js** and **CoffeeScript** in the wonderful Amsterdam. You can **[hire us for your project](#freelance)**.
-      """
+    
 
     @footer =>
       @ul id: 'menu', =>
         @li class: 'caption', => @span "Get in touch via"
         (@li => @a { href },  => @span label) for label, href of {
-          'GitHub'        : 'https://github.com/lzrski'
-          'StackOverflow' : 'https://careers.stackoverflow.com/lazurski'
-          'Twitter'       : 'https://twitter.com/lazurski'
-          'LinkedIn'      : 'https://linkedin.com/in/lazurski'
+          'Facebook'      : 'https://www.facebook.com/l2ldevelopment'
+          'Twitter'       : 'https://twitter.com/Lori2Lori'
+          'LinkedIn'      : 'https://nl.linkedin.com/in/dorotacieslinska'
+          'GitHub'        : 'https://github.com/Lori2Lori'
         }
-
-      # @a
-      #   class : 'source'
-      #   href  : 'https://github.com/lzrski/personal-website'
-      #   'Fork this website at GitHub'
