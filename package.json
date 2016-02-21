@@ -1,14 +1,14 @@
 {
-  "name": "tadeusz-lazurski-personal-website",
+  "name": "lori2lori-website",
   "version": "0.0.0",
-  "description": "My personal website",
+  "description": "My website",
   "main": "build/index.js",
   "scripts": {
     "test": "gulp test",
     "develop": "gulp develop",
     "prepublish": "gulp build"
   },
-  "author": "Tadeusz Łazurski",
+  "author": "Dorota Cieślińska",
   "license": "GPL3",
   "devDependencies": {
     "browserify": "^11.0.1",
