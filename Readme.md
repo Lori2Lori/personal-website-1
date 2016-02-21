@@ -1,11 +1,7 @@
-My personal website
+My contact website
 ===================
 
-Hello.
-
-This is the source code of my personal website. The live version is available at http://lazurski.pl/.
-
-I'm a big fan of preprocessors, tools and automation. The sources are written in:
+The sources are written in:
 
 `HTML`  :
   [Teacup](http://goodeggs.github.io/teacup/) with [my own little wrapper](https://github.com/Mikrosekcja/teacup-view)
