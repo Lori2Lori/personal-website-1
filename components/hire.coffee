@@ -4,7 +4,7 @@ module.exports = new View (attributes) ->
   @section attributes, => @div class: "container", =>
 
     @markdown """
-      # I am a **web developer**, I create **mobile-friendly** websites for companies suited for **multiple languages**.
+      # Let's create a **multilingual** and **mobile-friendly** websites for your company.
 
     """
 
@@ -22,7 +22,7 @@ module.exports = new View (attributes) ->
       @markdown """
         ## Area of expertise
 
-        If you have special needs for your business, I can help you choose **right feature set** and **technology stack** for your product. I have experience in **project management** and **product development** in various types of organisations. You can **outsource your entire project** or it's part to us or hire me to **strenghten your existing team**. I'm based in Bussum in the Amsterdam area.
+        If you have special needs for your business, I can help you choose **right feature set** and **technology stack** for your product. I have experience in **project management** and **product development** in various types of organisations. You can **outsource your entire project** or it's part to us or hire us to **strenghten your existing team**. I'm based in Bussum in the Amsterdam area.
 
         ## Some of the technologies I use
       """
